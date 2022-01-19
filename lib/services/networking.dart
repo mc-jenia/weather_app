@@ -5,7 +5,6 @@ class NetworkHelper {
   NetworkHelper(this.url);
 
   final String url;
-
   Future getData() async {
     var urL = Uri.parse(url);
     http.Response response = await http.get(urL);
